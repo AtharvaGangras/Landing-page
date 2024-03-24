@@ -1,57 +1,151 @@
+/* styles for entire webpage */
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display:flex;
+    flex-direction: column;
+    margin: 0;
+    height:100vh;
+}
 img{
     width: 100px;
     height: auto;
 }
+/* styles for header */
+
 .header,.intro,.footer{
     background-color: #1f2937;
     color:white;
 }
-button{
-    color:white;
-    background-color: #3882F6;
-}
+
 .header{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+    padding:20px 0px;
 }
 .links{
     display: flex;
     gap:25px;
 }
-a{
-    color:white;
+.links a{
+    color:#e5e7eb;
     text-decoration: none;
+    font-size: 18px;
 
 }
+.logo{
+    font-size: 24px;
+    color:#F9FAF8;
+}
+
+/* styling intro */
 .intro{
     display:flex;
-    align-items: stretch;
+    flex:1;
+    justify-content: center;
+    gap:50px;
+    align-items: center; 
 }
 .intro .container p{
-    max-width: 200px;
+    max-width: 400px;
+    font-size: 18px;
+
 }
 .intro img{
-    /* width:300px; */
+    width:300px; 
     height: auto;
+
 }
 .intro .container h1{
-    size:48px;
+    font-size:48px;
     font-weight:bolder;
     color:#F9FAF8;
-    width:200px;
+    width:400px;
     
 }
+button{
+    color:white;
+    background-color: #3882F6;
+    padding: 4px 26px;
+    border-radius: 10px;
+}
 
+/* information */
 .info{
     text-align: center;
 
 }
+.info h2{
+    font-size: 36px;
+    font-weight: bolder;
+    color:#1f2937;
+    margin-bottom: 20px;
+}
+.info li{
+    width: 100px;
+}
+.info img{
+    border:#3882F6 solid 4px;
+    border-radius: 10px;
+}
 ul{
     display:flex;
+    gap:100px;
     list-style:none;
+    align-items: center;
 }
-img{
-    width:100%;
-    height:auto;
+
+/* quote */
+.contain{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    width:100vw;
+    background-color: #e5e7eb;
+    padding:30px 0px;
+    flex:1;
 }
+
+.quote p{
+    font-size: 36px;
+    font-style: italic;
+    /* font-weight: 100; */
+    color:#1f2937;
+    /* margin:0px 20vw; */
+    width:50vw;
+
+}
+
+.writer{
+    text-align: end;
+}
+/* form */
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+.form{
+    background-color: #3882F6;
+    color:white;
+    border-radius: 10px;
+    padding:36px 100px;
+    display:flex;
+    gap:100px;
+}
+.container2 button{
+    border: 2px solid white;
+}
+
+/* footer */
+.footer{
+    padding:20px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
