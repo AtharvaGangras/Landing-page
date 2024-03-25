@@ -47,11 +47,16 @@ img{
     flex:1;
     justify-content: center;
     gap:50px;
-    align-items: center; 
+    align-items: center;
+    padding:50px 0px; 
+}
+.intro .c{
+    display:flex;
 }
 .intro .container p{
     max-width: 400px;
     font-size: 18px;
+    
 
 }
 .intro img{
@@ -59,11 +64,12 @@ img{
     height: auto;
 
 }
+
 .intro .container h1{
     font-size:48px;
     font-weight:bolder;
     color:#F9FAF8;
-    width:400px;
+    max-width:400px;
     
 }
 button{
@@ -76,6 +82,7 @@ button{
 /* information */
 .info{
     text-align: center;
+    padding:50px 0px;
 
 }
 .info h2{
@@ -96,6 +103,7 @@ ul{
     gap:100px;
     list-style:none;
     align-items: center;
+    flex-wrap:wrap;
 }
 
 /* quote */
